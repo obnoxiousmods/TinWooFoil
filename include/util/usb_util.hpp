@@ -33,16 +33,19 @@ namespace tin::util
 		RESPONSE = 1
 	};
 
-	struct USBCmdHeader
-	{
-		u32 magic;
-		USBCmdType type;
-		u8 padding[0x3] = { 0 };
-		u32 cmdId;
-		u64 dataSize;
-		u8 reserved[0xC] = { 0 };
-	} PACKED;
-
+#pragma pack(push, 1)
+struct USBCmdHeader
+{
+    u32 magic;
+    u8 type;
+    u8 padding1;
+    u8 padding2;
+    u8 padding3;
+    u32 cmdId;
+    u64 dataSize;
+    u8 reserved[0xC];
+};
+#pragma pack(pop)
 	static_assert(sizeof(USBCmdHeader) == 0x20, "USBCmdHeader must be 0x20!");
 
 	class USBCmdManager

@@ -1,3 +1,4 @@
+#define PACKED __attribute__((packed))
 /*
 Copyright (c) 2017-2018 Adubbz
 
