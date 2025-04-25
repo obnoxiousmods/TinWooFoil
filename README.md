@@ -1,5 +1,11 @@
 ![Main Page](https://i.imgur.com/QOi0Yvv.jpg)
 
+## ABOUT THIS FORK
+
+This fork is different from the original 2 repos because it contains updates to make it compile in a modern arch linux system.
+
+I am also hoping to add " Install from Tinfoil Shop " that is hardcoded to use my donator only tinfoil game repository / shop.
+
 ## Features
 - Installs NSP/NSZ/XCI/XCZ files and split NSP/XCI files from your SD card.
 - Installs NSP/NSZ/XCI/XCZ files over LAN or USB from tools such as [NS-USBloader](https://github.com/developersu/ns-usbloader).
